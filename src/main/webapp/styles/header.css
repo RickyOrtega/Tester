@@ -1,8 +1,52 @@
-.material-symbols-outlined {
-    font-size: 8em;
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 700,
-    'GRAD' 200,
-    'opsz' 48
+.container:first-child{
+    background-color: var(--color--navbar);
+}
+
+header{
+    max-width: 1200px;
+    height: 10vh;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+}
+
+.navbar-brand{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active, .navbar-brand.active{
+    text-shadow: 0px 0px 2px var(--color--enfasis--lg);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.btn-inicio-sesion{
+    background-color: var(--color--enfasis);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-inicio-sesion:focus,
+.btn-inicio-sesion:hover,
+.btn-inicio-sesion:active{
+    background-color: var(--color--enfasis--lg);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px var(--color--enfasis--lg);
+}
+
+.btn-inicio-sesion .fa-person{
+    font-size: 20px;
+    margin-right: 10px;
 }
