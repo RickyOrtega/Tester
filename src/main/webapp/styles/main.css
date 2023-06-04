@@ -1,0 +1,45 @@
+.container:nth-child(2) {
+    background-color: var(--color--navbar);
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main p{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color--enfasis);
+}
+
+.seccion-main{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.iconos-profesiones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.icono-profesion{
+    color: var(--color--enfasis);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+}
