@@ -1,4 +1,4 @@
-form{
+#formulario-crear-cuenta{
     width: 50%;
     margin: 0 auto;
     display: flex;
@@ -22,7 +22,7 @@ form{
     transition: height 0.3s ease-in-out;
 }
 
-#form-cambiante label{
+#formulario-crear-cuenta label{
     font-size: 1.5rem;
     font-weight: 500;
     color: var(--color--enfasis);
@@ -30,7 +30,7 @@ form{
     width: 75%;
 }
 
-#form-cambiante input[type="text"], form input[type="password"], form input[type="email"]{
+#formulario-crear-cuenta input[type="text"], #formulario-crear-cuenta input[type="password"], #formulario-crear-cuenta input[type="email"]{
     width: 75%;
     height: 2rem;
     margin: 0.5rem 0;
@@ -41,7 +41,7 @@ form{
     caret-color: var(--color--enfasis);
 }
 
-#form-cambiante input[type="submit"]{
+#formulario-crear-cuenta input[type="submit"]{
     height: 3rem;
     text-align: center;
     margin-top: 1rem;
