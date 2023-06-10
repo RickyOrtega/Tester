@@ -65,7 +65,7 @@
     flex-direction: row;
     width: 100%;
     margin: 1vh 0;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .cabecera-posibles-resultados{
@@ -90,6 +90,7 @@
     justify-content: space-between;
     width: 31%;
     margin: 1vh;
+    padding: 1rem;
 }
 
 #boton-añadir-posible-resultado{
@@ -100,6 +101,8 @@
     justify-content: center;
     align-items: center;
     margin: 0.5rem 0;
+    /*Calcularé la suma de los vh de los demás elementos de la tarjeta para tener idea*/
+    min-height: 340px;
 }
 
 #boton-añadir-posible-resultado:hover{
