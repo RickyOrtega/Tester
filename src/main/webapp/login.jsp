@@ -54,7 +54,7 @@
                 //Verificamos si el inicio de sesión fue exitoso
                 if (usuario != null) {
                     session.setAttribute("usuario", usuario);
-                    response.sendRedirect("logged.html");
+                    response.sendRedirect("logged_index.html");
                 } else {
                     request.setAttribute("error", "Usuario o contraseña incorrectos");
                 }

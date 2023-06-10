@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/tester.css">
+    <title>Nuevo Test</title>
+</head>
+
+<body class="body-logged">
+    <nav class="barra-superior">
+        <section class="navbar-izq">
+            <a class="titulo" href="./logged_index.html">Tester</a>
+        </section>
+        <section class="navbar-mid">
+            <div class="elemento-nav" id="logged-nuevo-test">
+                <a href="logged_crear_test.html">Crear Test</a>
+            </div>
+            <div class="elemento-nav" id="logged-realizar-test">
+                <p>Realizar Test</p>
+            </div>
+            <div class="elemento-nav" id="logged-resultados">
+                <p>Resultados</p>
+            </div>
+        </section>
+        <section class="navbar-der">
+            <i class="fa-solid fa-user"></i>
+            <p class="nombre-usuario">Pepito Pérez</p>
+            <i class="fa-solid fa-sign-out"></i>
+        </section>
+    </nav>
+    <main id="contenedor-main">
+        <div class="contenido-main">
+            <article>
+                <form action="" method="POST">
+                    <div class="contenedor-contenedor-inputs">
+                        <div class="contenedor-inputs">
+                            <label for="nombre-test">Nombre:</label>
+                            <input type="text" name="nombre-test" id="nombre-test" placeholder="Nombre del test">
+                        </div>
+                        <div class="contenedor-inputs">
+                            <label for="tipo-test">Tipo:</label>
+                            <select name="tipo-test" id="tipo-test">
+                                <option value="1">Personalidad</option>
+                                <option value="2">Conocimientos</option>
+                                <option value="3">Aptitudes</option>
+                                <option value="4">Vocacional</option>
+                            </select>    
+                        </div>
+                    </div>
+                    <label for="descripcion-test">Descripción</label>
+                    <textarea name="descripcion-test" id="descripcion-test" cols="30" rows="10" placeholder="Descripción del test"></textarea>
+                    <!--Aquí irá una zona donde se generarán los inputs para crear los posibles resultados automáticamente al clicar en un botón-->
+
+                    <div class="cabecera-posibles-resultados">
+                        <p>Posibles resultados:</p>
+                    </div>
+                    <div id="zona-resultados">
+                        <div class="tarjeta-resultado" id="tarjeta-resultado-0">
+                            <div class="cabecera-nombre-resultado" >
+                                <label for="nombre-resultado-0">Nombre:</label>
+                                <input type="text" name="nombre-resultado-0" id="nombre-resultado-0" placeholder="Nombre del resultado" class="nombre-resultado">
+                            </div>
+                            <div class="descripcion-resultado">
+                                <label for="descripcion-resultado-0">Descripción:</label>
+                                <textarea name="descripcion-resultado-0" id="descripcion-resultado-0" placeholder="Descripción del resultado"></textarea>
+                            </div>
+                        </div>
+                        <div id="boton-añadir-posible-resultado">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+    <script src="./scripts/font-awesome.min.js"></script>
+    <script src="./scripts/logged/crear-test-agnadir-respuesta.js"></script>
+
+</body>
+
+</html>

@@ -12,6 +12,7 @@
     --color--enfasis: #B80E65;
     --color--enfasis--lg: rgb(18, 18, 64);
     --color--navbar: #1c1b4d;
+    --color--navbar--palido: #5353a1;
     --color--texto--lg: rgb(232, 232, 232);
     --color--main: #353465;
 }
@@ -34,4 +35,5 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--color--texto--lg);
 }

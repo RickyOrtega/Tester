@@ -8,40 +8,34 @@
     <link rel="stylesheet" href="./styles/tester.css">
     <title>Tester</title>
 </head>
-
 <body class="body-logged">
-    <nav class="barra-lateral">
-        <section class="navbar-sup">
-            <i class="fa-solid fa-user"></i>
-            <p class="nombre-usuario">Pepito Pérez</p>
+    <nav class="barra-superior">
+        <section class="navbar-izq">
+            <a class="titulo" href="./logged_index.html">Tester</a>
         </section>
         <section class="navbar-mid">
-            <div class="elemento-nav" id="logged-home">
-                <i class="fa-solid fa-house"></i>
-                <p>Inicio</p>
-            </div>
             <div class="elemento-nav" id="logged-nuevo-test">
-                <i class="fa-solid fa-plus"></i>
-                <p>Crear Test</p>
+                <a href="logged_crear_test.html">Crear Test</a>
             </div>
             <div class="elemento-nav" id="logged-realizar-test">
-                <i class="fa-solid fa-user-plus"></i>
                 <p>Realizar Test</p>
             </div>
             <div class="elemento-nav" id="logged-resultados">
-                <i class="fa-solid fa-magnifying-glass"></i>
                 <p>Resultados</p>
             </div>
         </section>
-        <section class="navbar-inf">
-            <div class="elemento-nav">
-                <i class="fa-solid fa-right-from-bracket fa-rotate-180"></i>
-                <p>Cerrar Sesión</p>
-            </div>
+        <section class="navbar-der">
+            <i class="fa-solid fa-user"></i>
+            <p class="nombre-usuario">Pepito Pérez</p>
+            <i class="fa-solid fa-sign-out"></i>
         </section>
     </nav>
-    <main id="contenido-tests">
-        
+    <main id="contenedor-main">
+        <div class="contenido-main">
+            <article>
+                <h2>Tester es una app interactiva online que te permitirá</h2>
+            </article>
+        </div>
     </main>
     <script src="./scripts/font-awesome.min.js"></script>
     <script src="./scripts/logged/new-test.js"></script>

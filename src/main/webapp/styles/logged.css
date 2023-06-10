@@ -1,91 +1,25 @@
-@import url("./logged/logged-home.css");
-@import url("./logged/logged-tests.css");
+@import url("./logged/logged_index.css");
+@import url("./logged/logged_crear_test.css");
+
+.barra-superior{
+    background-color: var(--color--navbar);
+    color: var(--color--texto--lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+
+.navbar-mid, .navbar-der, .navbar-izq{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-mid .elemento-nav, .navbar-der *{
+    margin: 0 1rem;
+}
 
 .body-logged{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #cdcdcd;
-    width: 100%;
-}
-
-.barra-lateral{
-    width: 20%;
-    height: 100%;
-    background-color: var(--color--navbar);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
-.navbar-sup{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
-.navbar-sup *, .elemento-nav *{
-    padding: 0 10px;
-    font-size: 20px;
-    color: white;
-}
-
-#contenido-tests{
-    width: 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-}
-
-.navbar-mid{
-    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.elemento-nav{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 20px;
-}
-
-.elemento-nav:hover{
-    cursor: pointer;
-}
-
-.navbar-mid .elemento-nav:hover{
-    background-color: var(--color--enfasis--lg);
-}
-
-.navbar-inf{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-}
-
-.navbar-inf .elemento-nav:hover{
-    color: var(--color--enfasis--lg);
-}
-
-.active{
-    background-color: var(--color--enfasis--lg);
-    box-shadow: inset 0px 1px 25px 5px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
 }

@@ -41,7 +41,7 @@ boton_cambiar_formulario.addEventListener('click', () => {
             <input type="submit" value="Iniciar Sesión" class="btn-inicio-sesion">`
 
         boton_cambiar_formulario.innerText = '¿No tienes una cuenta? Regístrate';
-        form.setAttribute('action', 'iniciar-sesion.jsp');
+        form.setAttribute('action', 'login.jsp');
         
         formulario_actual = 0;
     }

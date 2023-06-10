@@ -1,0 +1,112 @@
+.contenido-main{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-main form{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: right;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 1200px;
+}
+
+.contenedor-contenedor-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1vh 0;
+}
+
+.contenedor-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.contenido-main form input{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.contenido-main form select{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.contenido-main form textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.contenido-main form label{
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+#zona-resultados{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 1vh 0;
+    justify-content: flex-start;
+}
+
+.cabecera-posibles-resultados{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0;
+    font-size: 1.2rem;
+}
+
+.fa-plus{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.tarjeta-resultado, #boton-añadir-posible-resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31%;
+    margin: 1vh;
+}
+
+#boton-añadir-posible-resultado{
+    border-radius: 0.5rem;
+    background-color: var(--color--navbar--palido);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+#boton-añadir-posible-resultado:hover{
+    background-color: rgb(78, 77, 127);
+}
+
+.tarjeta-resultado label, .tarjeta-resultado input{
+    display: block;
+    width: 100%;
+}
