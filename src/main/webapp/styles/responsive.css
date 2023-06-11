@@ -1,0 +1,125 @@
+/*Haremos responsive la página*/
+
+@media screen and (max-width: 1200px){
+    .contenido-main{
+        width: 1000px;
+    }
+
+    .contenido-main form{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .contenido-main{
+        width: 800px;
+    }
+
+    .contenido-main form{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    .barra-superior{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .navbar-izq{
+        order: 1;
+        width: 48%;
+    }
+
+    .navbar-der{
+        order: 2;
+        width: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .navbar-der .nombre-usuario{
+        display: none;
+    }
+
+    .fa-user{
+        display: none;
+    }
+
+    .navbar-mid{
+        margin-top: 3vh;
+        order: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .contenido-main{
+        width: 600px;
+    }
+
+    .contenido-main form{
+        width: 600px;
+    }
+
+    .tarjeta-resultado, #boton-añadir-posible-resultado{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contenido-main{
+        width: 400px;
+    }
+
+    .contenedor-contenedor-inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-inputs, .contenedor-textarea{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cabecera-posibles-resultados{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contenido-main form{
+        width: 400px;
+    }
+
+    .tarjeta-resultado, #boton-añadir-posible-resultado{
+        width: 100%;
+    }
+
+    #boton-añadir-posible-resultado{
+        margin: 4vh;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .navbar-mid{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contenido-main{
+        width: 100%;
+    }
+
+    .contenido-main form{
+        width: 100%;
+    }
+}

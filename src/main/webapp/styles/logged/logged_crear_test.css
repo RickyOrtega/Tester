@@ -13,7 +13,6 @@
     align-items: right;
     justify-content: right;
     margin: 0 auto;
-    max-width: 1200px;
     width: 1200px;
 }
 
@@ -64,7 +63,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 1vh 0;
+    margin: 1vh 0 8vh 0;
     flex-wrap: wrap;
 }
 
@@ -112,4 +111,20 @@
 .tarjeta-resultado label, .tarjeta-resultado input{
     display: block;
     width: 100%;
+}
+
+.eliminar-tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(41, 86, 184, 1);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.eliminar-tarjeta:hover{
+    background-color: rgba(21, 66, 164, 1);
 }
