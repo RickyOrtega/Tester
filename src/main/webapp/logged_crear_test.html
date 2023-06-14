@@ -35,34 +35,53 @@
         <div class="contenido-main">
             <article>
                 <form action="" method="POST">
-                    <div class="contenedor-contenedor-inputs">
-                        <div class="contenedor-inputs">
-                            <label for="nombre-test">Nombre:</label>
-                            <input type="text" name="nombre-test" id="nombre-test" placeholder="Nombre del test">
+                    <div id="primera-parte" class="non-visible">
+                        <div class="contenedor-contenedor-inputs">
+                            <div class="contenedor-inputs">
+                                <label for="nombre-test">Nombre:</label>
+                                <input type="text" .-name="nombre-test" id="nombre-test" placeholder="Nombre del test">
+                            </div>
+                            <div class="contenedor-inputs">
+                                <label for="tipo-test">Tipo:</label>
+                                <select name="tipo-test" id="tipo-test">
+                                    <option value="1">Personalidad</option>
+                                    <option value="2">Conocimientos</option>
+                                    <option value="3">Aptitudes</option>
+                                    <option value="4">Vocacional</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="contenedor-inputs">
-                            <label for="tipo-test">Tipo:</label>
-                            <select name="tipo-test" id="tipo-test">
-                                <option value="1">Personalidad</option>
-                                <option value="2">Conocimientos</option>
-                                <option value="3">Aptitudes</option>
-                                <option value="4">Vocacional</option>
-                            </select>    
+                        <div class="contenedor-textarea">
+                            <label for="descripcion-test">Descripción</label>
+                            <textarea name="descripcion-test" id="descripcion-test" cols="30" rows="10"
+                                placeholder="Descripción del test"></textarea>
+                        </div>
+                        <div class="cabecera-posibles-resultados">
+                            <p>Posibles resultados:</p>
+                        </div>
+                        <div id="zona-resultados">
+                            <div id="boton-añadir-posible-resultado">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="contenedor-textarea">
-                        <label for="descripcion-test">Descripción</label>
-                        <textarea name="descripcion-test" id="descripcion-test" cols="30" rows="10" placeholder="Descripción del test"></textarea>
+                    <div class="visible" id="segunda-parte">
+                        <div class="titulo-zona-preguntas">
+                            <p>Zona Preguntas</p>
+                        </div>
+                        <div class="zona-preguntas" id="zona-preguntas">
+                            <div class="boton-añadir-pregunta" id="boton-añadir-pregunta">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Añadir pregunta</span>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <!--Aquí irá una zona donde se generarán los inputs para crear los posibles resultados automáticamente al clicar en un botón-->
-
-                    <div class="cabecera-posibles-resultados">
-                        <p>Posibles resultados:</p>
-                    </div>
-                    <div id="zona-resultados">
-                        <div id="boton-añadir-posible-resultado">
-                            <i class="fa-solid fa-plus"></i>
+                    <div id="barra-inferior" class="visible">
+                        <div id="boton-siguiente">
+                            <p>Siguiente</p>
+                        </div>
+                        <div class="non-visible" id="enviar">
+                            <button type="submit" id="boton-enviar">Enviar</button>
                         </div>
                     </div>
                 </form>
@@ -70,8 +89,9 @@
         </div>
     </main>
     <script src="./scripts/font-awesome.min.js"></script>
-    <script src="./scripts/logged/crear-test-agnadir-respuesta.js"></script>
-
+    <script src="./scripts/logged/crear-test-agnadir-posible-resultado.js"></script>
+    <script src="./scripts/logged/crear-test-siguiente.js"></script>
+    <script src="./scripts/logged/crear-test-agnadir-preguntas-respuestas.js"></script>
 </body>
 
 </html>

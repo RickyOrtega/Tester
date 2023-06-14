@@ -44,6 +44,7 @@ boton_añadir_posible_resultado.addEventListener("click", function () {
     textarea_descripcion_resultado.setAttribute("id", "descripcion-resultado-" + contador_resultados);
     textarea_descripcion_resultado.setAttribute("name", "descripcion-resultado-" + contador_resultados);
     textarea_descripcion_resultado.setAttribute("placeholder", "Descripción del resultado");
+    textarea_descripcion_resultado.setAttribute("class", "descripcion-resultado");
 
     let boton_eliminar_tarjeta = document.createElement("div");
     boton_eliminar_tarjeta.setAttribute("class", "eliminar-tarjeta");

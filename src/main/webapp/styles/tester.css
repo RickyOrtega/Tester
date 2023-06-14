@@ -37,3 +37,11 @@ a{
     text-decoration: none;
     color: var(--color--texto--lg);
 }
+
+.non-visible{
+    display: none;
+}
+
+.visible{
+    display: block;
+}

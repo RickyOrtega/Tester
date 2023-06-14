@@ -1,4 +1,4 @@
-.contenido-main{
+.contenido-main {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
 }
 
-.contenido-main form{
+.contenido-main form {
     display: flex;
     flex-direction: column;
     align-items: right;
@@ -16,7 +16,7 @@
     width: 1200px;
 }
 
-.contenedor-contenedor-inputs{
+.contenedor-contenedor-inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,27 +25,27 @@
     margin: 1vh 0;
 }
 
-.contenedor-inputs{
+.contenedor-inputs {
     display: flex;
     flex-direction: column;
     width: 48%;
 }
 
-.contenido-main form input{
+.contenido-main form input {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 0.5rem;
     outline: none;
 }
 
-.contenido-main form select{
+.contenido-main form select {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 0.5rem;
     outline: none;
 }
 
-.contenido-main form textarea{
+.contenido-main form textarea {
     resize: none;
     width: 100%;
     height: 200px;
@@ -54,12 +54,12 @@
     outline: none;
 }
 
-.contenido-main form label{
+.contenido-main form label {
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
-#zona-resultados{
+#zona-resultados {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -67,7 +67,7 @@
     flex-wrap: wrap;
 }
 
-.cabecera-posibles-resultados{
+.cabecera-posibles-resultados {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -77,13 +77,14 @@
     font-size: 1.2rem;
 }
 
-.fa-plus{
+.fa-plus {
     color: #fff;
     font-size: 1.5rem;
     margin: 0 0.5rem;
 }
 
-.tarjeta-resultado, #boton-añadir-posible-resultado{
+.tarjeta-resultado,
+#boton-añadir-posible-resultado {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -92,7 +93,7 @@
     padding: 1rem;
 }
 
-#boton-añadir-posible-resultado{
+#boton-añadir-posible-resultado {
     border-radius: 0.5rem;
     background-color: var(--color--navbar--palido);
     cursor: pointer;
@@ -100,20 +101,22 @@
     justify-content: center;
     align-items: center;
     margin: 0.5rem 0;
+
     /*Calcularé la suma de los vh de los demás elementos de la tarjeta para tener idea*/
     min-height: 340px;
 }
 
-#boton-añadir-posible-resultado:hover{
+#boton-añadir-posible-resultado:hover {
     background-color: rgb(78, 77, 127);
 }
 
-.tarjeta-resultado label, .tarjeta-resultado input{
+.tarjeta-resultado label,
+.tarjeta-resultado input {
     display: block;
     width: 100%;
 }
 
-.eliminar-tarjeta{
+.eliminar-tarjeta {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +128,25 @@
     color: rgb(255, 255, 255);
 }
 
-.eliminar-tarjeta:hover{
+.eliminar-tarjeta:hover {
     background-color: rgba(21, 66, 164, 1);
+}
+
+#barra-inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#barra-inferior #boton-siguiente,
+#barra-inferior #boton-enviar {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color--navbar--palido);
+    color: #fff;
 }

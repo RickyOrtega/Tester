@@ -1,5 +1,6 @@
 @import url("./logged/logged_index.css");
 @import url("./logged/logged_crear_test.css");
+@import url("./logged/logged_crear_pregunta.css");
 
 .barra-superior{
     background-color: var(--color--navbar);
