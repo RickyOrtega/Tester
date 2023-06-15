@@ -5,7 +5,13 @@ let boton_agnadir_pregunta = document.getElementById("boton-añadir-pregunta");
 
 let contador_preguntas = 1;
 
+let contador_respuestas = [];
+
 boton_agnadir_pregunta.addEventListener("click", function () {
+
+    let pregunta_actual = contador_preguntas;
+
+    contador_respuestas[pregunta_actual] = 1;
 
     let tarjeta_pregunta = document.createElement("div");
     tarjeta_pregunta.classList.add("tarjeta-pregunta");
@@ -68,16 +74,14 @@ boton_agnadir_pregunta.addEventListener("click", function () {
 
     boton_añadir_respuesta.addEventListener("click", function () {
 
-        let contador_respuestas = 1;
-
         let fila_respuesta = document.createElement("tr");
 
         let respuesta = document.createElement("td");
 
         let texto_respuesta = document.createElement("input");
         texto_respuesta.setAttribute("type", "text");
-        texto_respuesta.setAttribute("name", "respuesta-" + contador_preguntas + "-" + contador_respuestas);
-        texto_respuesta.setAttribute("id", "respuesta-" + contador_preguntas + "-" + contador_respuestas);
+        texto_respuesta.setAttribute("name", "respuesta-" + pregunta_actual + "-" + contador_respuestas[pregunta_actual]);
+        texto_respuesta.setAttribute("id", "respuesta-" + pregunta_actual + "-" + contador_respuestas[pregunta_actual]);
         texto_respuesta.setAttribute("placeholder", "Respuesta");
 
         respuesta.appendChild(texto_respuesta);
@@ -85,12 +89,14 @@ boton_agnadir_pregunta.addEventListener("click", function () {
         let resultado = document.createElement("td");
 
         let select_resultado = document.createElement("select");
+        select_resultado.setAttribute("name", "resultado-" + pregunta_actual + "-" + contador_respuestas[pregunta_actual]);
 
         let opciones_a_mostrar = getResultados();
 
         for (let i = 0; i < opciones_a_mostrar.length; i++) {
             let opcion = document.createElement("option");
             opcion.textContent = opciones_a_mostrar[i].nombre;
+            opcion.setAttribute("value", opciones_a_mostrar[i].nombre);
             select_resultado.appendChild(opcion);
         }
 
@@ -120,7 +126,8 @@ boton_agnadir_pregunta.addEventListener("click", function () {
 
         cuerpo_tabla_respuestas.appendChild(fila_respuesta);
 
-        contador_respuestas++;
+        contador_respuestas[pregunta_actual]++;
+
     });
 
     let icono_boton_añadir_respuesta = document.createElement("i");
